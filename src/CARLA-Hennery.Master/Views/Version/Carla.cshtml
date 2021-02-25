@@ -1,0 +1,14 @@
+@model CarlaVersionViewModel
+@{
+    ViewBag.Title = "CARLA Versions";
+    Layout = "_Layout";
+}
+
+<h2>CARLA Versions</h2>
+
+@{
+    foreach (var item in Model.KnownCarlaVersions)
+    {
+        <p>@item.ToString()</p>
+    }
+}
