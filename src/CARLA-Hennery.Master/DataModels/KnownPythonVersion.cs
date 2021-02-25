@@ -10,5 +10,14 @@ namespace CARLA_Hennery.Master.DataModels
         public int Id { get; set; }
 
         public DateTime UpdateDateTime { get; set; }
+
+        public KnownPythonVersion()
+        {
+        }
+
+        public KnownPythonVersion(Version version) : base(version.Major,version.Major,version.Patch)
+        {
+            UpdateDateTime = DateTime.Now;
+        }
     }
 }

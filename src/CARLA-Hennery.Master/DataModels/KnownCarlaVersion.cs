@@ -10,5 +10,15 @@ namespace CARLA_Hennery.Master.DataModels
         public int Id { get; set; }
 
         public DateTime UpdateDateTime { get; set; }
+
+        public KnownCarlaVersion()
+        {
+        }
+
+        public KnownCarlaVersion(Version version) : base(version.Major, version.Minor, version.Patch,
+            version.Additional)
+        {
+            
+        }
     }
 }
