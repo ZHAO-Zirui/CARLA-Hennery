@@ -19,8 +19,13 @@ namespace CARLA_Hennery.Master
 
             using var scope = host.Services.CreateScope();
 
+            // Startup carla version capture
             var carlaVersionCapture = scope.ServiceProvider.GetRequiredService<CarlaVersionCaptureService>();
             carlaVersionCapture.Run();
+            
+            // Startup python version capture
+            var pythonVersionCapture = scope.ServiceProvider.GetRequiredService<PythonVersionCaptureService>();
+            pythonVersionCapture.Run();
             
             host.Run();
         }

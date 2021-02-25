@@ -33,6 +33,7 @@ namespace CARLA_Hennery.Master
 
             services.AddScoped<VersionManager>();
             services.AddScoped<CarlaVersionCaptureService>();
+            services.AddScoped<PythonVersionCaptureService>();
 
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }

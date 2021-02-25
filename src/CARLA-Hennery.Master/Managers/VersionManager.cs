@@ -23,7 +23,7 @@ namespace CARLA_Hennery.Master.Managers
 
         public bool IsPythonVersionKnown(Library.Python.Version other)
         {
-            return KnownPythonVersions.Cast<Library.Python.Version>().Any(i => Equals(i, other));
+            return KnownPythonVersions.ToList().Cast<Library.Python.Version>().Any(i => Equals(i, other));
         }
         
         public bool IsCarlaVersionKnown(Library.CARLA.Version other)
