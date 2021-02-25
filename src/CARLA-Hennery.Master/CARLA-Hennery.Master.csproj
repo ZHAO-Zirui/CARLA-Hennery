@@ -12,6 +12,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.3" />
     </ItemGroup>
@@ -22,6 +23,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CARLA-Hennery.Library\CARLA-Hennery.Library.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Pages" />
     </ItemGroup>
 
 </Project>
