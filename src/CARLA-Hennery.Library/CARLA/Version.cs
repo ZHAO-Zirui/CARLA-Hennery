@@ -13,6 +13,18 @@ namespace CARLA_Hennery.Library.CARLA
 
         public int Additional { get; set; }
 
+        public Version()
+        {
+        }
+
+        public Version(int major, int minor, int patch, int additional = 0)
+        {
+            Major = major;
+            Minor = minor;
+            Patch = patch;
+            Additional = additional;
+        }
+
         public int CompareTo(Version? other)
         {
             if (ReferenceEquals(this, other)) return 0;
