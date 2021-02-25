@@ -24,4 +24,8 @@
       <ProjectReference Include="..\CARLA-Hennery.Library\CARLA-Hennery.Library.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="DataModels" />
+    </ItemGroup>
+
 </Project>
