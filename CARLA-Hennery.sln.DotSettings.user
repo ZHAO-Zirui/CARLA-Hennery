@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=231ff0d3_002Dd99f_002D4a19_002D8406_002D45f378357f27/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestInit" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::5A54AF69-0AA1-43E9-9BB5-F99CC7E05570::net5.0::LibraryUnitTest.PythonVersionTest.TestInit&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::5A54AF69-0AA1-43E9-9BB5-F99CC7E05570::net5.0::LibraryUnitTest.PythonVersionTest.TestInit2&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=68a146ab_002D5bef_002D41ac_002D9aa7_002D9396071715cc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestInit2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::5A54AF69-0AA1-43E9-9BB5-F99CC7E05570::net5.0::LibraryUnitTest.PythonVersionTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
