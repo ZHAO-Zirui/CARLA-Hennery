@@ -27,7 +27,10 @@ namespace CARLA_Hennery.Master.Services
             _logger = logger;
             _configuration = configuration;
             _version = version;
+        }
 
+        public void Run()
+        {
             try
             {
                 Repositories = _configuration["CARLA:Repositories"];
@@ -41,11 +44,7 @@ namespace CARLA_Hennery.Master.Services
                 _logger.LogCritical("Loss CARLA configuration in file:'appsettings.json'\n{E}",e);
                 _isConfigurationOk = false;
             }
-
-        }
-
-        public void Run()
-        {
+            
             if (!_isConfigurationOk)
             {
                 _logger.LogCritical("Configuration failure. Capture thread will not start");
