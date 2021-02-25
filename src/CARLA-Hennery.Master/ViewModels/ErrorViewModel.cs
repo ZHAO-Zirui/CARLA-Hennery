@@ -1,6 +1,6 @@
 using System;
 
-namespace CARLA_Hennery.Master.Models
+namespace CARLA_Hennery.Master.ViewModels
 {
     public class ErrorViewModel
     {

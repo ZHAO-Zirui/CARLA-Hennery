@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using CARLA_Hennery.Master.Models;
+using CARLA_Hennery.Master.ViewModels;
 
 namespace CARLA_Hennery.Master.Controllers
 {
