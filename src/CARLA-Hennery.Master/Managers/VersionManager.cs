@@ -28,7 +28,7 @@ namespace CARLA_Hennery.Master.Managers
         
         public bool IsCarlaVersionKnown(Library.CARLA.Version other)
         {
-            return KnownPythonVersions.Cast<Library.CARLA.Version>().Any(i => Equals(i, other));
+            return KnownCarlaVersions.Cast<Library.CARLA.Version>().Any(i => Equals(i, other));
         }
 
         public void AddPythonVersion(Library.Python.Version version)
@@ -37,6 +37,7 @@ namespace CARLA_Hennery.Master.Managers
             var known = new KnownPythonVersion(version);
             _db.KnownPythonVersions.Add(known);
             _db.SaveChanges();
+            _logger.LogInformation($"New python version ({version}) added into database.");
         }
         
         public void AddCarlaVersion(Library.CARLA.Version version)
@@ -45,6 +46,8 @@ namespace CARLA_Hennery.Master.Managers
             var known = new KnownCarlaVersion(version);
             _db.KnownCarlaVersions.Add(known);
             _db.SaveChanges();
+            _logger.LogInformation($"New CARLA version ({version}) added into database.");
+
         }
     }
 }
