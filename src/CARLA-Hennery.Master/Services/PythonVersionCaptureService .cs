@@ -63,7 +63,7 @@ namespace CARLA_Hennery.Master.Services
                 StartInfo = new ProcessStartInfo()
                 {
                     FileName = "curl",
-                    Arguments = Target,
+                    Arguments = $"-s {Target}",
                     RedirectStandardOutput = true
                 }
             };
